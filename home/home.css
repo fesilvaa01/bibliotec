@@ -219,3 +219,72 @@ a
     color: var(--branco);
 
 }
+
+
+/* Seção livros recomendados */
+
+.livros
+{
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.livros-lista
+{
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+
+    
+    border-radius: 10px;
+    
+}
+
+.livro
+{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 20px;
+    text-align: center;
+}
+
+
+
+.livro img
+{
+    width: 130px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+}
+
+.livro h3
+{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: var(--azul-escuro);
+}
+
+.livro-autor-label
+{
+    font-size: 0.9em;
+    
+    margin-bottom: 2px;
+}
+
+.livro-autor-nome
+{
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--azul-escuro);
+}
