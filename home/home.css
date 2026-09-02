@@ -288,3 +288,146 @@ a
     font-weight: 500;
     color: var(--azul-escuro);
 }
+
+/* Rodapé */
+
+.rodape
+{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 60px 120px 30px;
+}
+
+.rodape-topo
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.rodape-marcas
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rodape-logo-bibliotec
+{
+    height: 40px;
+    width: auto;
+}
+
+.rodape-logo-senai
+{
+    height: 36px;
+    width: auto;
+}
+
+.rodape-colunas
+{
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.rodape-coluna
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rodape-coluna h3
+{
+    color: var(--cor-destaque);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.rodape-coluna a
+{
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.rodape-coluna a:hover
+{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.rodape-redes
+{
+    display: flex;
+    gap: 12px;
+}
+
+.rodape-redes img
+{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.rodape-linha
+{
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 50px 0 25px;
+}
+
+.rodape-base
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.rodape-base p
+{
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.rodape-links-legais
+{
+    display: flex;
+    gap: 30px;
+}
+
+.rodape-links-legais a
+{
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.rodape-links-legais a:hover
+{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px)
+{
+    .rodape
+    {
+        padding: 40px 30px 20px;
+    }
+
+    .rodape-colunas
+    {
+        gap: 40px;
+    }
+
+    .rodape-base
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
