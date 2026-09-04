@@ -1,34 +1,6 @@
 /* Cabeçalho */
 
-a
-{
-    color: var(--branco);
-    text-decoration: none; /*tira o sublinhado do link*/
 
-}
-
-.cabecalho
-{
-    background-color: var(--azul-escuro);
-    display: flex;
-    justify-content: space-between; /* alinha no sentido do flex */
-    align-items: center; /* alinha no sentido contrario do flex */
-    padding: 0 120px;
-    height: 10vh; /*10% da visualização vertical do dispositivo*/
-}
-
-.navegacao
-{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-.navegacao a
-{
-    text-transform: uppercase;
-    font-size: 1rem; /* equivale a 16px */
-    font-weight: 500;
-}
 
 /* Conteudo principal */
 
