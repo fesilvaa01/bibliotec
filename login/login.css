@@ -1,12 +1,11 @@
 /* MAIN */
 
-.conteudo
-{
+.conteudo {
     background-image: url(../imgs/banner-login.png);
     background-size: cover;
 
     height: 90vh;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +13,7 @@
 
 /* ÁREA LOGIN */
 
-.login
-{
+.login {
     display: flex;
     flex-direction: column;
 
@@ -30,10 +28,9 @@
     gap: 50px;
 }
 
-/* CABECALHO DO LOGIN */
+/* CABEÇALHO DO LOGIN */
 
-.login-cabecalho
-{
+.login-cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,23 +38,21 @@
     gap: 5px;
 }
 
-.login-cabecalho img
-{
+.login-cabecalho img {
     margin-bottom: 15px;
 }
 
-.login-cabecalho h1
-{
+.login-cabecalho h1 {
     font-size: 1.5em;
 }
 
-.login-cabecalho p
-{
+.login-cabecalho p {
     font-size: 1em;
 }
 
-form
-{
+/* FORMULÁRIO */
+
+form {
     display: flex;
     flex-direction: column;
 
@@ -66,8 +61,7 @@ form
 
 /* CAMPOS */
 
-.campo
-{
+.campo {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -79,18 +73,18 @@ input,
 {
     width: 100%;
     height: 50px;
+
     border-radius: 10px;
 }
 
-.campo label
-{
+.campo label {
     color: var(--azul-escuro);
     font-size: 1em;
     font-weight: 700;
 }
 
-.campo input
-{
+
+.campo input {
     border: none;
     outline: none;
 
@@ -101,21 +95,18 @@ input,
     font-size: 1em;
 }
 
-.campo input::placeholder
-{
+.campo input::placeholder {
     color: #00000050;
     font-style: italic;
 }
 
 /* CAMPO SENHA */
 
-.campo-senha
-{
+.campo-senha {
     position: relative;
 }
 
-.botao-olho
-{
+.botao-olho {
     position: absolute;
 
     right: 20px;
@@ -131,11 +122,10 @@ input,
 
 /* BOTÃO ENTRAR */
 
-.botao-entrar
-{
+.botao-entrar {
     margin-top: 30px;
     border: none;
-
+    
     background-color: var(--azul-escuro);
     color: var(--branco);
 
@@ -149,18 +139,16 @@ input,
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.botao-entrar:hover
-{
+.botao-entrar:hover {
     cursor: pointer;
     background-color: #344957;
 
     transform: translateY(-3px);
 }
 
-/* BOTÃO GOOGLE */
+/* BOTAO GOOGLE */
 
-.botao-google
-{
+.botao-google {
     border: none;
 
     background-color: var(--branco);
@@ -179,14 +167,12 @@ input,
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.botao-google:hover
-{
+.botao-google:hover {
     cursor: pointer;
     transform: translateY(-3px);
 }
 
-.botao-google img
-{
+.botao-google img {
     width: 30px;
     height: 30px;
 }
