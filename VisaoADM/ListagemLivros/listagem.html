@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Livros</title>
 
-    <link rel="stylesheet" href="../ListagemLivros/listagem.css">
+    <link rel="stylesheet" href="listagem.css">
     <link rel="stylesheet" href="../../styles/global.css">
 
-    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body class="pagina-listagem" >
+<body class="pagina-listagem">
     <aside class="menu-lateral">
         <div class="topo-menu">
             <button class="botao-voltar">
@@ -23,6 +23,7 @@
         </div>
 
         <nav class="menu-navegacao">
+
             <a href="#" class="item-menu">
                 <i class="fa-solid fa-user"></i>
                 <span>Perfil</span>
@@ -52,17 +53,20 @@
                 <i class="fa-solid fa-address-book"></i>
                 <span>Livros Reservados</span>
             </a>
+
         </nav>
 
         <!-- SAIR -->
-         <a href="#" class="botao-sair">
-            <i class="fa-solid fa-right-from-bracket" ></i>
+        <a href="#" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
             <span>Sair</span>
-         </a>
+        </a>
     </aside>
+
     <main class="conteudo-listagem">
+
         <section class="cabecalho-pagina">
-            <h1>Listar livros</h1>
+            <h1>Listar Livros</h1>
             <p>Gerencie e acompanhe os livros cadastrados</p>
         </section>
 
@@ -70,6 +74,7 @@
          <section class="card-listagem">
 
             <div class="area-busca">
+
                 <div class="campo-busca">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Buscar livro por nome...">
@@ -81,9 +86,8 @@
                 </button>
 
             </div>
-            
-            <!-- CABECALHO DA LISYA -->
 
+            <!-- CABEÇALHO DA LISTA -->
             <div class="cabecalho-lista">
                 <h2>Nome</h2>
                 <h2>Reservado</h2>
@@ -93,8 +97,22 @@
             </div>
 
             <!-- LIVROS -->
+            <div class="lista-livros">
 
-            <div class="lista-livro">
+                <!-- LIVRO -->
+                <article class="livro">
+                    <p class="nome-livro">TI para Negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
 
                 <article class="livro">
                     <p class="nome-livro">TI para Negócios</p>
@@ -110,7 +128,6 @@
                     </button>
                 </article>
 
-
                 <article class="livro">
                     <p class="nome-livro">TI para Negócios</p>
                     <input type="checkbox">
@@ -124,22 +141,6 @@
                         <i class="fa-solid fa-circle-info"></i>
                     </button>
                 </article>
-
-
-                <article class="livro">
-                    <p class="nome-livro">TI para Negócios</p>
-                    <input type="checkbox">
-                    <p class="categoria-livro">TI</p>
-
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
-
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </button>
-                </article>
-
 
                 <article class="livro">
                     <p class="nome-livro">TI para Negócios</p>
@@ -157,13 +158,13 @@
 
             </div>
 
-            <!-- RODAPE DA LISTAGEM -->
-
+            <!-- RODAPÉ DA LISTAGEM -->
             <div class="rodape-listagem">
                 <p class="quantidade-livros">Mostrando 4 de 4 livros</p>
 
                 <!-- PAGINAÇÃO -->
-                 <div class="paginacao">
+                <div class="paginacao">
+
                     <button class="botao-pagina">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
@@ -173,8 +174,10 @@
                     <button class="botao-pagina">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
-                 </div>
+
+                </div>
             </div>
+
          </section>
     </main>
 </body>

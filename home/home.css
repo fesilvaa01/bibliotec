@@ -1,140 +1,135 @@
-/* Cabeçalho */
-
-
-
-/* Conteudo principal */
+/* Conteúdo principal */
 
 /* Primeiro banner */
-.banner-principal
-{
+.banner-principal {
     color: var(--branco);
+
     height: 70vh;
+
     background-image: url(../imgs/banner-principal-home.png);
     background-size: cover;
-    /*overflow: hidden; Evitem que os elementos transbordem */
+
+    /* overflow: hidden;  evita que os elementos transbordem */
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     padding: 0 120px;
 }
 
-.texto-banner
-{
+.texto-banner {
     height: 100%;
+
     display: flex;
     flex-direction: column;
+
     align-items: flex-start;
     justify-content: center;
+
     gap: 50px;
 }
 
-.texto-banner p
-{
+.texto-banner p {
     font-size: 1.5em;
     width: 60%;
 }
 
-.botao
-{
+.botao {
     padding: 20px 50px;
+
     border-radius: 10px;
+
     background-color: var(--cor-destaque);
     color: var(--azul-escuro);
+
     font-size: 1.2em;
     font-weight: 700;
+
     text-transform: uppercase;
 }
 
-.botao:hover
-{
+.botao:hover {
     background-color: #2ab2ab;
     color: var(--branco);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.banner-principal img
-{
+.banner-principal img {
     align-self: flex-end;
-    width: 35%;  
+    width: 35%;
 }
 
 /* Titulo das seções */
 
-.titulo-secao
-{
+.titulo-secao {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.titulo-secao h2
-{
+.titulo-secao h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.titulo-secao span
-{
+.titulo-secao span {
     display: flex;
     width: 250px;
     height: 4px;
     background-color: var(--cor-destaque);
 }
 
-/* Seção beneficios */
+/* Seção Benefícios */
 
-.beneficios
-{
+.beneficios {
     padding: 50px 120px;
+
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
 
+    gap: 100px;
 }
 
-.beneficios-lista
-{
+.beneficios-lista {
     display: grid;
+
     grid-template-columns: repeat(3, 20%);
     gap: 10%;
-    justify-content: center;
 
+    justify-content: center;
 }
 
-.beneficio
-{
+.beneficio {
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
 
-    padding: 80px 20px 50px; /* em cima -> direita -> embaixo */
+    padding: 80px 20px 50px; /* em cima -> direita e esquerda -> embaixo */
 
     border: 1px solid var(--azul-escuro);
     border-radius: 30px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25); /* x -> y -> blur -> cor com transparencia */
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25); /* x -> y -> blur -> cor com transparência */
 
     text-align: center;
 
-    /* cria referencia de posicionamento para o icone, quando o icone for posicionado, use esse quadro referencia */
-   
+    /* Cria referência de posicionamento para o ícone, quando o ícone for posicionado, uas esse card como referência. */
 
-    /* sem isso, o circuito poderia usar outros elementos da pagina com referencias e sair passeando pelo layout */
-     position: relative;
-    
+    /* sem isso, o círculo poderia usar outro elemento da página como referência e sair passeando pelo layout. */
+    position: relative;
 }
 
-.beneficio-icone img
-{
+.beneficio-icone img {
     width: 50%;
 }
 
-.beneficio-icone
-{
+.beneficio-icone {
+
     border: 4px solid var(--cor-destaque);
     background-color: var(--branco);
     border-radius: 50%;
@@ -142,264 +137,345 @@
     width: 30%;
     height: 30%;
 
-    /*retira o icone do fluxo normal, com o absolute ele pode ficar por cima do card*/
+    /* Retira o ícone do fluxo normal, com o absolute ele pode ficar por cima do card */
     position: absolute;
 
-    /* Move o circulo para cima, o valor negativo faz ele sair parcialmente do card */
+    /* Move o círculo para cima, o valor negativo faz ele sair parcialmente do card */
     top: -15%;
 
-    /*Coloca o começo do elemento de 50% da largura do card */
+    /* Coloca o começo do elemento em 50% da largura do card */
     left: 50%;
 
-    /*ajustamos o posicionamento do elemento, mas a borda esquerda do circulo fica no centro nao o circulo inteiro*/
-    /*por isso usamos transform: translateX(-50%), que move o proprio circulo para a esquerda em 50% da largura dele, fazendo com que o circulo fique perfeitamente centralizado */
+    /* ajustamos o posicionamento do elemento, mas a borda esquerda do círculo fica no centro, não o círculo inteiro */
+    /* por isso usamos transform: translateX(-50%); que move o próprio círculo para a esquerda em 50% da largura dele, fazendo com que o círculo fique perfeitamente centralizado. */
     transform: translateX(-50%);
 
     display: grid;
     place-items: center;
 
-    /* place-itens: center, é a mesma coisa que colocar align-itens: center e justify-itens: center; */
-
+    /* place-items: center; é a mesma coisa que colocar: 
+        align-itens: center e justify-items: center; */
 }
 
-.beneficio h3
-{
+.beneficio h3 {
     font-size: 1.2em;
     margin-bottom: 30px;
     text-transform: uppercase;
     width: 90%;
 }
 
-.beneficio p
-{
+.beneficio p {
     font-size: 1em;
-    width: 80%;  
+    width: 80%;
 }
 
 /* Banner meio */
-
-.banner-meio
-{
+.banner-meio {
     height: 60vh;
     background-image: url(../imgs/Banner\ centro.svg);
     background-size: cover;
+    /* background-repeat: no-repeat; */
 
     display: flex;
     justify-content: flex-end;
+
     padding: 0 120px;
-
     color: var(--branco);
-
 }
 
+/* Acervo */
 
-/* Seção livros recomendados */
+.acervo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
 
-.livros
-{
     padding: 50px 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
 }
 
-.livros-lista
-{
-    display: flex;
-    width: 100%;
-    max-width: 1100px;
-
-    
-    border-radius: 10px;
-    
+.livros {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 5%;
 }
 
-.livro
-{
-    flex: 1;
-
+.livro {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    padding: 30px 20px;
+    justify-content: space-between;
+    gap: 20px;
+
+    align-items: center;
     text-align: center;
 }
 
-
-
-.livro img
-{
-    width: 130px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 4px;
-
-    margin-bottom: 20px;
+.livro img {
+    height: 300px;
 }
 
-.livro h3
-{
-    font-size: 1.1em;
+.livro h3 {
     text-transform: uppercase;
-    margin-bottom: 15px;
-    color: var(--azul-escuro);
-}
-
-.livro-autor-label
-{
-    font-size: 0.9em;
-    
-    margin-bottom: 2px;
-}
-
-.livro-autor-nome
-{
     font-size: 1em;
-    font-weight: 500;
-    color: var(--azul-escuro);
+    width: 65%;
 }
 
-/* Rodapé */
+.livro-texto {
+    font-size: 0.8em;
+}
 
-.rodape
-{
+/* footer - feito pelos alunos */
+
+footer{
     background-color: var(--azul-escuro);
     color: var(--branco);
-    padding: 60px 120px 30px;
+    padding: 100px 120px 30px;
 }
 
-.rodape-topo
-{
+.main {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 60px;
 }
 
-.rodape-marcas
-{
+.rodape-logos {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 130px;
 }
 
-.rodape-logo-bibliotec
-{
-    height: 40px;
-    width: auto;
+.rodape-informacoes {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
 }
 
-.rodape-logo-senai
-{
-    height: 36px;
-    width: auto;
-}
-
-.rodape-colunas
-{
-    display: flex;
-    gap: 80px;
-    flex-wrap: wrap;
-}
-
-.rodape-coluna
-{
+.nav-footer  {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
-.rodape-coluna h3
-{
+.nav-footer p {
     color: var(--cor-destaque);
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
+
+}
+.nav-footer a {
+    color: var(--branco);
+    margin-bottom: 10px;
 }
 
-.rodape-coluna a
-{
-    font-size: 0.95rem;
-    font-weight: 400;
-    opacity: 0.9;
-}
-
-.rodape-coluna a:hover
-{
-    opacity: 1;
-    text-decoration: underline;
-}
-
-.rodape-redes
-{
+.icones {
     display: flex;
-    gap: 12px;
+    gap: 20px;
 }
 
-.rodape-redes img
-{
-    width: 30px;
-    height: 30px;
-    display: block;
+footer span {
+    display: flex;
+    margin: 50px 0;
+    background-color: white;
+    height: 1px;
+    width: 100%;
 }
 
-.rodape-linha
-{
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-    margin: 50px 0 25px;
-}
-
-.rodape-base
-{
+.footer-inferior {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
 }
 
-.rodape-base p
-{
-    font-size: 0.85rem;
-    opacity: 0.85;
-}
-
-.rodape-links-legais
-{
+.footer {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
 }
 
-.rodape-links-legais a
-{
-    font-size: 0.85rem;
-    opacity: 0.85;
+.rodape-informacoes p {
+    color: var(--cor-destaque);
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
 }
 
-.rodape-links-legais a:hover
+.footer-inferior {
+    display: flex;
+}
+
+/* RESPONSIVIDADE */
+
+.botao-menu
 {
-    opacity: 1;
-    text-decoration: underline;
+    background: transparent;
+
+    border: none;
+    cursor: pointer;
+
+    /* ESCONDE O ELEMENTO */
+    display: none;
+}
+
+.botao-menu i
+{
+    font-size: 2em;
+
+    color: var(--branco);
+}
+
+/* RESPONSIVIDADE COM TAMANHOS -> MEDIA QUERY */
+
+@media (max-width: 1024px)
+{
+    html
+    {
+        font-size: 12px;
+    }
+
+    .cabecalho img
+    {
+        width: 60%;
+    }
+
+    .texto-banner h1
+    {
+        text-align: center;
+    }
+
+    /* BENEFICIOS */
+
+    .beneficios
+    {
+        gap: 50px;
+
+        padding: 30px 0;
+
+        overflow: hidden;
+    }
+
+    .beneficios-lista
+    {
+        grid-template-columns: repeat(3, 30%);
+
+        overflow-x: scroll; /* permite que o objeto role para o lado */
+
+        padding: 50px 20px;
+
+        justify-content: flex-start;
+    }
+
+    .beneficios-lista::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    .beneficio
+    {
+        padding: 80px 10px 50px;
+    }
+
+    .beneficio h3
+    {
+        margin-bottom: 25px;
+        width: 60%;
+    }
+
+    .beneficio p
+    {
+        width: 60%;
+    }
+
+    /* BANNER MEIO */
+
+    .banner-meio
+    {
+        background-position: center;
+        padding: 0 30px;
+    }
+
+    .banner-meio .texto-banner
+    {
+        align-items: flex-end;
+    }
+
+    .banner-meio .texto-banner p
+    {
+        text-align: right;
+    }
+
+    /* ACERVO */
+
+    .acervo
+    {
+        padding: 70px 40px;
+        gap: 50px;
+    }    
+
+    .livros
+    {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+        gap: 40px 20px;
+    }
+
+    .livro img
+    {
+        max-width: 100%;
+    }
+
+    .livro h3
+    {
+        font-size: 1.2em;
+    }
+
+    .livro-texto
+    {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 768px)
 {
-    .rodape
+    .cabecalho
     {
-        padding: 40px 30px 20px;
+        padding: 0 40px;
+
+        position: relative;
     }
 
-    .rodape-colunas
+    .botao-menu
     {
-        gap: 40px;
+        /* FAZ O MENU HAMBURGUER APARECER NOVAMENTE */
+        display: flex;
     }
 
-    .rodape-base
+    .navegacao
     {
+        background-color: var(--azul-escuro);
+
+        position: absolute;
+
+        /* DISTANCIA DE 10VH DO TOPO */
+        top: 10vh;
+
+        /* ENCOSTA NA ESQUERDA */
+        left: 0;
+
+        width: 100%;
+        height: auto;
+
+        padding: 40px;
+
+        border-radius: 0 0 0 30px;
+
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
+
+        gap: 20px;
+
+        /* SO FUNCIONA COM POSITION, QUANTO MAIOR O Z-INDEX, MAIS PRA CIMA O ELEMENTO FICA */
+        z-index: 100;
+
+        display: none;
     }
 }
